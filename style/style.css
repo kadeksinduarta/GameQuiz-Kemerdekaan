@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #ddd;
+  background-image: url(../img/BG.png);
 }
 
 .container {
@@ -53,8 +53,11 @@ body {
   padding: 20px 0;
 }
 
-#optionLi {
-  /* background-color: #ff0000; */
+.quiz-container h3::before {
+  content: "soal :  ";
+  display: block;
+  height: 25px;
+  /* margin-top: 20px; */
 }
 
 #optionLi li {
@@ -126,13 +129,21 @@ body {
   padding: 50px 0;
   margin: auto;
   text-align: center;
-  background-color: #ddd;
-  text-align: left;
+  /* background-color: #ddd; */
+  text-align: center;
 }
 
 .informasi h1 {
   color: #ff0000;
   padding: 10px;
+  text-transform: capitalize;
+}
+
+.h3 {
+  color: #ff0000;
+  margin-top: 30px;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 .informasi .p {
@@ -140,10 +151,24 @@ body {
 }
 
 .aturan {
-  margin: 40px 0;
+  margin: 20px 0;
   /* background-color: rgb(159, 201, 237); */
   text-align: left;
-  width: 50%;
+  width: 100%;
+  text-transform: capitalize;
+  display: flex;
+}
+
+.aturan::first-letter {
+  text-transform: uppercase;
+}
+
+.aturan ol {
+  margin: 0px 20px;
+  width: 700px;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 2px 1px 22px -1px rgba(0, 0, 0, 0.5);
 }
 
 .informasi button {
@@ -190,7 +215,16 @@ body {
   .informasi ul {
     margin-left: 20px;
   }
+
   .aturan {
-    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .aturan ol {
+    margin: 20px 0;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 2px 1px 22px -1px rgba(0, 0, 0, 0.5);
   }
 }

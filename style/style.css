@@ -31,7 +31,7 @@ body {
   margin: 0 auto;
   /* height: 80%; */
   border-radius: 30px;
-  padding: 0px 10px;
+  padding: 20px 10px;
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
@@ -123,14 +123,16 @@ body {
 .informasi {
   width: 70%;
   height: 100vh;
-  padding: 0px auto;
+  padding: 50px 0;
   margin: auto;
   text-align: center;
   background-color: #ddd;
+  text-align: left;
 }
 
 .informasi h1 {
   color: #ff0000;
+  padding: 10px;
 }
 
 .informasi .p {
@@ -141,6 +143,7 @@ body {
   margin: 40px 0;
   /* background-color: rgb(159, 201, 237); */
   text-align: left;
+  width: 50%;
 }
 
 .informasi button {
@@ -166,6 +169,7 @@ body {
 
 @media (max-width: 500px) {
   .quiz-container {
+    padding: 0px 10px;
   }
 
   .informasi {
@@ -185,5 +189,8 @@ body {
   }
   .informasi ul {
     margin-left: 20px;
+  }
+  .aturan {
+    width: 100%;
   }
 }
